@@ -1,0 +1,52 @@
+{
+  "__comment": "Remplacez les valeurs YOUR_* par vos clés/testnet. NE PAS committer ce fichier dans un repo public.",
+  "exchange": {
+    "name": "okx",
+    "key": "YOUR_API_KEY",
+    "secret": "YOUR_API_SECRET",
+    "password": "YOUR_API_PASSPHRASE",
+    "ccxt_config": {},
+    "ccxt_async_config": {}
+  },
+  "pair_whitelist": [
+    "BTC/USDT",
+    "ETH/USDT"
+  ],
+  "pair_blacklist": [],
+  "stake_currency": "USDT",
+  "stake_amount": 10.0,
+  "dry_run": true,
+  "timeframe": "5m",
+  "trading_mode": "futures",
+  "leverage": 1,
+  "margin_mode": "isolated",
+  "max_open_trades": 3,
+  "minimal_roi": {
+    "0": 0.02
+  },
+  "stoploss": -0.10,
+  "unfilledtimeout": {
+    "entry": 10,
+    "exit": 10
+  },
+  "cancel_open_orders_on_exit": false,
+  "order_types": {
+    "buy": "limit",
+    "sell": "limit",
+    "stoploss": "market",
+    "stoploss_on_exchange": false,
+    "take_profit": "limit"
+  },
+  "exchange_overrides": {},
+  "telegram": {
+    "enabled": false,
+    "token": "",
+    "chat_id": ""
+  },
+  "dry_run_wallet": 1000.0,
+  "fiat_display_currency": "USD",
+  "timeframe_candles": {
+    "max_candles": 500
+  },
+  "bot_name": "freqtrade_bot"
+}

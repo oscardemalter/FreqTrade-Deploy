@@ -1,0 +1,5 @@
+# Ignore local config with API keys
+user_data/config.json
+__pycache__/
+*.pyc
+.env
