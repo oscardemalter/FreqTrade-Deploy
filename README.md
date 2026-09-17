@@ -1,7 +1,12 @@
-################################################################################
-# ÜberOKX
-Plateforme trading privée — ADN MojoCode. PAPER par défaut ; LIVE à triple garde.
-Lancer : pip install -r requirements.txt && uvicorn backend.main:app --host 0.0.0.0 --port 8080
-Evidence : structural-only ; aucun ordre réel sans switch LIVE + confirmation + clés.
+# FreqTrade Deploy
 
+Ce dépôt contient un template prêt à l'emploi pour déployer Freqtrade sur un VPS Ubuntu avec Docker.
 
+Contenu:
+- docker-compose.yml : lance l'image officielle Freqtrade et monte ./user_data
+- user_data/config.sample.json : fichier de configuration à remplir (NE PAS y mettre de vraies clés dans le repo)
+- user_data/strategies/SampleStrategy.py : stratégie d'exemple (RSI)
+- README.md : instructions d'installation et d'utilisation
+- .gitignore : ignore user_data/config.json
+
+Important: NE COMMITEZ JAMAIS vos vraies clés API. Utilisez user_data/config.json localement et ajoutez-le à .gitignore.
