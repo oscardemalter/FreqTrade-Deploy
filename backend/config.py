@@ -8,7 +8,7 @@ class Settings:
     def __init__(self):
         self.ENVIRONMENT = os.getenv("ENVIRONMENT", "dev")
         self.ADMIN_EMAIL = os.getenv("ADMIN_EMAIL", "admin@ubergestalt.local")
-        self.DEFAULT_ADMIN_PASSWORD_HASH = "$pbkdf2-sha256$29000$Z8z5X0sJwbiXsjYmJITQOg$lXx8e6iKHdyfgdxEKoYXJAvcZ0YaH6go9v1QlOCPBwQ"
+        self.DEFAULT_ADMIN_PASSWORD_HASH = "$pbkdf2-sha256$29000$J2TsXSullHIOoZSyNqb0fg$n4M9pwJ1V5uk0VK0RzVNA9RLdT5WRWDKbcFI/P6ZYXs"
         self.ADMIN_PASSWORD_HASH = os.getenv("ADMIN_PASSWORD_HASH") or self.DEFAULT_ADMIN_PASSWORD_HASH
         self.SECRET_KEY = os.getenv("SECRET_KEY", "ubergestalt_secret_key_ultra_secure_2026_jwt")
         self.WEBHOOK_HMAC_SECRET = os.getenv("WEBHOOK_HMAC_SECRET", "ubergestalt_webhook_secret")
